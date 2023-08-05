@@ -1,28 +1,18 @@
-# React Crypto ATM
-
-This is a simple React component for a Crypto ATM application. It allows users to connect their MetaMask wallet, view their account balance, deposit and withdraw ETH, check the owner's name and a simple calculator with limited operations.
+# Assessment Smart Contract
+This is a simple Solidity smart contract named "Assessment" that allows the contract owner to manage a balance and perform deposit and withdrawal operations.
 
 ## Features
 
-The Crypto ATM component provides the following features:
+- **Deposit**: The contract owner can deposit additional funds into the contract by using the `deposit` function. This increases the contract's balance.
 
-- Connect to MetaMask wallet
-- Display user's account address
-- View user's account balance
-- Deposit ETH into the ATM
-- Withdraw ETH from the ATM
-- Check the owner's name
-- add two values
-- subtract two values
-- multiply two values
+- **Withdraw**: The contract owner can withdraw funds from the contract using the `withdraw` function. This decreases the contract's balance. If the contract balance is insufficient, an error will be thrown.
 
-Please note that the component assumes you have set up and configured MetaMask in your browser.
+- **Balance**: The current balance of the contract can be checked using the `getBalance` function.
 
-## Customization
+- **Order Management**: The contract has an `Order` variable that can be incremented or decremented using the `increment` and `decrement` functions, respectively.
 
-You can customize the UI elements, styles, and behavior of the Crypto ATM component according to your project's requirements. Modify the JSX structure, CSS styles, and event handlers to align with your application's design and functionality.
-
-
+## Getting Started
+To use this smart contract, you need a development environment [ReamixIDE](https://remix.ethereum.org/) with the Solidity compiler version 0.8.16.
 
 ## Setup
 
@@ -37,7 +27,10 @@ After cloning the github, you will want to do the following to get the code runn
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
 
-## Video Walkthrough
 
+## Authors
+Ashish Mandal
 
-https://www.loom.com/share/09fa5148b7d9494f96048e1d2512fa76
+## License
+
+This project is licensed under the [MIT] License.
